@@ -1,0 +1,53 @@
+name: Запрос функции
+description: Структурированный запрос новой возможности сервиса бронирования аудиторий
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: input
+    id: source
+    attributes:
+      label: Источник запроса
+      description: Кто сообщил и в каком канале?
+      placeholder: "Например: пользователь И. Иванов, письмо от 01.10.2026"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Проблема
+      description: Что не удаётся сделать сейчас и почему это важно?
+      placeholder: "Опишите ситуацию пользователя без предположений о решении"
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Критерии приёмки
+      description: Перечислите наблюдаемые условия приёмки
+      placeholder: |
+        - Владелец: ...
+        - Дата: ...
+        - Поля: ...
+        - Пустой результат: ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Ограничения и исключения
+      description: Что в задачу не входит, ограничения по доступу, формату, срокам
+      placeholder: "Например: без экспорта в XLSX, только владелец данных, без изменения схемы БД"
+    validations:
+      required: true
+
+  - type: input
+    id: related
+    attributes:
+      label: Связанные требования и issue
+      description: Номера R1–R5 или #issue
+      placeholder: "#12, R5"
+    validations:
+      required: false
