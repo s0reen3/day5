@@ -71,7 +71,7 @@
 - Форма `feature.yml`: https://github.com/s0reen3/day5/blob/main/.github/ISSUE_TEMPLATE/feature.yml
 - PR документа: https://github.com/s0reen3/day5/pull/9
 - PR формы: —
-- Project: [__________](https://github.com/users/s0reen3/projects/1)
+- Project: https://github.com/users/s0reen3/projects/1
 
 ## 8. Что не завершено и почему
 
